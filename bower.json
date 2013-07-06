@@ -1,0 +1,13 @@
+{
+  "name": "Grunt-RJS-Karma-seed",
+  "version": "1.0.0",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.5",
+    "jquery": ">= 2.0.0",
+    "underscore" : ">= 1.4.4" 
+  }
+}
