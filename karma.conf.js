@@ -26,10 +26,19 @@ exclude = [
   'app/scripts/main.js'
 ];
 
+preprocessors = {
+  'app/scripts/**/*.js': 'coverage'
+};
+
 
 // test results reporter to use
 // possible values: 'dots', 'progress', 'junit'
-reporters = ['progress'];
+reporters = ['progress', 'coverage'];
+
+coverageReporter = {
+  type : 'html',
+  dir : 'coverage/'
+}
 
 
 // web server port
@@ -61,7 +70,7 @@ autoWatch = true;
 // - Safari (only Mac)
 // - PhantomJS
 // - IE (only Windows)
-browsers = ['Chrome'];
+browsers = ['PhantomJS'];
 
 
 // If browser does not capture in given timeout [ms], kill it
@@ -70,4 +79,4 @@ captureTimeout = 60000;
 
 // Continuous Integration mode
 // if true, it capture browsers, run tests and exit
-singleRun = false;
+singleRun = true;
